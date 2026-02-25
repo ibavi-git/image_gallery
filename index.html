@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visual Gallery</h1>
+            <p class="subtitle">A responsive image gallery with lightbox view and filtering</p>
+        </header>
+        
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All Images</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="urban">Urban</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+        </div>
+        
+        <div class="gallery" id="imageGallery">
+            <!-- Images will be loaded by JavaScript -->
+        </div>
+        
+        <div class="nav-controls">
+            <button class="nav-btn" id="prevBtn">
+                <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <button class="nav-btn" id="nextBtn">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <footer>
+            <p>Responsive Image Gallery with Lightbox &bull; Built with HTML, CSS & JavaScript</p>
+        </footer>
+    </div>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="closeLightbox">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightboxImage" src="" alt="">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

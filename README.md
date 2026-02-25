@@ -25,7 +25,7 @@ image-gallery/
 ## ▶️ How to Run
 1. Clone the repository:
    ```
-   git clone https://github.com/ibavi-git/image-gallery.git
+   git clone https://github.com/ibavi-git/image_gallery.git
    ```
 2. Open `index.html` in your browser.
 
